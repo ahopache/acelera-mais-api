@@ -44,13 +44,13 @@ const mapChallenges = (id) => {
 }
 
 const getExerciseType = (challenge) => {
-  const { github, zip } = challenge
+  const { github, zip, exerciseStatement } = challenge
   if (zip !== "") {
     return { type: "zip", link: zip }
   } if (github !== "") {
     return { type: "github", link: github }
   }
-  return { type: "Not defined.", link: "" }
+  return { type: "Not defined.", link: exerciseStatement }
 }
 
 const createExercise = ({ name, type, link }) => {
