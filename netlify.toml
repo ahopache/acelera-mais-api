@@ -1,6 +1,6 @@
 [build]
   command="yarn build"
-  publish="dist/acelera-mais-api/"
+  publish="dist"
 
 [[redirects]]
   from = "/*"
